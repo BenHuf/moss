@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.scss'
 import {
     createBrowserRouter,
+    createHashRouter,
     RouterProvider,
 } from "react-router-dom";
 import "./index.scss";
@@ -13,7 +14,7 @@ import Shop from "./routes/shop";
 import About from "./routes/about";
 import Contact from "./routes/contact";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Root />,
